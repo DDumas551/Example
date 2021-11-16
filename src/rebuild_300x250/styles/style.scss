@@ -1,0 +1,18 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#clickthrough-button {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid grey;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  //width: TODO;
+  //height: TODO;
+}
+
+// TODO: ad styles

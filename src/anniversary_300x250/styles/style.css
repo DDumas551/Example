@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#clickthrough-button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  width: 300;
+  height: 250;
+}
+
+#default-image {
+  z-index: 2;
+  position: fixed;
+  animation: Fade 6s forwards;
+}
+
+#trans-image {
+  z-index: 1;
+  position: fixed;
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
